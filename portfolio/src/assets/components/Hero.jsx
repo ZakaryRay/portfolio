@@ -2,13 +2,13 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <div>
-            <div className="font-family-unbounded font-black text-7xl">
+        <div className="p-10 border-b border-gray-900">
+            <div className="font-family-unbounded font-black text-7xl mb-6">
                 <p>ZAKARY</p>
                 <p className="text-electric-green ">RAYMOND</p>
             </div>
-            <div className="font-mono flex space-x-7 ">
-                <p className="text-gray-purple">DÉVELOPPEUR FRONT-END</p>
+            <div className="font-mono flex space-x-7 text-sm">
+                <p className="text-gray-purple">DÉVELOPPEUR WEB FRONT-END</p>
                 <span className="w-1 h-1 bg-gray-purple/50 self-center rounded"></span>
                 <div className="space-x-2 flex ">
                     <span className="relative inline-flex w-2 h-2 self-center">

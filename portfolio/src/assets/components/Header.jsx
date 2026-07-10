@@ -14,7 +14,7 @@ const Header = () => {
             </Link>
 
             <nav className="mt-4 md:my-0">
-                <ul className="w-full space-x-10 text-sm text-gray-500/60 space-y-6 md:space-y-0 md:flex">
+                <ul className="w-full space-x-10 text-sm text-gray-purple space-y-6 md:space-y-0 md:flex">
                     <NavLink to="/" end className={linkClass}>
                         {({ isActive }) => (
                             <>
