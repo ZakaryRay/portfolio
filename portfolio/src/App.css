@@ -18,6 +18,7 @@ body {
 
 @theme {
     --color-electric-green: #c8ff3e;
+    --color-gray-purple: #52517b;
     --font-family-dm-sans: "DM Sans", sans-serif;
     --font-family-unbounded: "Unbounded", sans-serif;
 }
