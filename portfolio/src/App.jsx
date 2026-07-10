@@ -1,11 +1,14 @@
 import React from "react";
 import Home from "./assets/pages/Home";
+import { Outlet } from "react-router-dom";
+import Header from "./assets/components/Header";
 
 const App = () => {
     return (
-        <div>
-            <Home />
-        </div>
+        <>
+            <Header />
+            <Outlet />
+        </>
     );
 };
 
