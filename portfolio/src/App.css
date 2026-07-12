@@ -22,4 +22,5 @@ body {
     --color-light-gray: #adadad;
     --font-family-dm-sans: "DM Sans", sans-serif;
     --font-family-unbounded: "Unbounded", sans-serif;
+    --breakpoint-custom: 1320px;
 }

@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <header className="justify-between border-b border-gray-900 p-8 font-family-unbounded space-y-10 md:space-y-0 md:flex md:text-lg text-2xl">
-            <Link className="hover:text-electric-green font-semibold tracking-wider hover:cursor-pointer transition-all duration-250 self-center">
+            <Link className="hover:text-electric-green font-semibold tracking-wider hover:cursor-pointer transition-all duration-250 self-center text-xl md:text-2xl">
                 ZAKARY RAYMOND
             </Link>
 
