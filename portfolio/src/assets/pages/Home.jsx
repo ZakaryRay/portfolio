@@ -1,15 +1,39 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Stacks from "../components/Stacks";
+import Stats from "../components/Stats";
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut" },
+    },
+};
+
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: { staggerChildren: 0.15 },
+    },
+};
 
 const Home = () => {
     return (
         <>
             <Hero />
-            <main className="text-light-gray p-10 custom:flex custom:space-x-20 ">
-                <div className="custom:w-1/2 ">
-                    <div className="space-y-3 text-base/7  ">
+            <main className="text-light-gray py-14 px-10 custom:py-30 custom:flex custom:space-x-20 custom-border ">
+                <motion.div
+                    className="custom:w-1/2 "
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}>
+                    <motion.div variants={fadeInUp} className="space-y-3 text-base/7  ">
                         <p className="">
                             Je suis fraichement diplomé, mais completement fou crazy Lorem ipsum
                             dolor sit amet, consectetur adipisicing elit. Autem quod facere
@@ -22,8 +46,10 @@ const Home = () => {
                             dolor deleniti, quae ut dolores facilis asperiores voluptatibus, amet
                             fugiat.
                         </p>
-                    </div>
-                    <div className="flex flex-col space-y-2 text-gray-purple font-mono custom:w-1/2 my-10">
+                    </motion.div>
+                    <motion.div
+                        variants={fadeInUp}
+                        className="flex flex-col space-y-2 text-gray-purple font-mono custom:w-1/2 mt-10 max-custom:mb-10">
                         <a
                             href="mailto:zkary-raymond@live.fr"
                             className="group flex items-center space-x-2 hover:text-white/80 custom:w-fit">
@@ -31,7 +57,6 @@ const Home = () => {
                             <span>zakary-raymond@live.fr</span>
                             <i className="bx bxs-chevron-up rotate-45 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                         </a>
-
                         <a
                             href="https://github.com/ZakaryRay"
                             target="_blank"
@@ -51,10 +76,11 @@ const Home = () => {
                             <span>linkedin.com/in/zakaryray</span>
                             <i className="bx bxs-chevron-up rotate-45 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                         </a>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
                 <Stacks />
             </main>
+            <Stats />
         </>
     );
 };
