@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Stacks from "../components/Stacks";
-import Stats from "../components/Stats";
+import Hero from "../components_home/Hero";
+import Stacks from "../components_home/Stacks";
+import Stats from "../components_home/Stats";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
