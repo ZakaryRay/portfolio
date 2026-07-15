@@ -8,9 +8,10 @@ const Projets = () => {
         {
             id: 1,
             name: "Synakode",
-            year: "2026",
+            year: "2025",
             type: "Full stack",
-            description: "Site full stack avec gestion de client, contract et devis.",
+            description:
+                "Site full stack avec un portail de gestion des clients, des documents et des devis. Côté client, un site vitrine affichant l'expertise de l'entreprise.  ",
             stacks: ["React", "Tailwind CSS", "JavaScript", "Laravel", "PHP", "PostgreSQL"],
             img_url: "../img/synakode_bg.png",
             url: "https://synakode.com",

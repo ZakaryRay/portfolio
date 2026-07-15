@@ -34,16 +34,15 @@ const Home = () => {
                     viewport={{ once: true, amount: 0.3 }}>
                     <motion.div variants={fadeInUp} className="space-y-3 text-base/7  ">
                         <p className="">
-                            Je suis fraichement diplomé, mais completement fou crazy Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit. Autem quod facere
-                            voluptatibus ipsum ipsa quas labore esse sunt odio asperiores, mollitia
-                            fugit. Illo asperiores alias deserunt fugit quos quaerat neque?
+                            Je développe des projets web, avec un vrai souci de la propreté et de la
+                            lisibilité du code. Après plus d'un an en front-end, je me mets
+                            tranquillement au back-end pour pouvoir construire des projets de bout
+                            en bout.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in est
-                            placeat error ab, ullam voluptatem nihil repudiandae ipsam nesciunt
-                            dolor deleniti, quae ut dolores facilis asperiores voluptatibus, amet
-                            fugiat.
+                            J'apprends en continu — chaque projet est l'occasion de tester un truc
+                            nouveau ou d'améliorer ma façon de faire. J'aime que ce que je construis
+                            soit à la fois solide techniquement et agréable à utiliser.
                         </p>
                     </motion.div>
                     <motion.div
