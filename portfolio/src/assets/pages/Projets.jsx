@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components_home/Header";
 import Hero_projet from "../components_projets/Hero_projet";
 import ProjectFrame from "../components_projets/ProjectFrame";
+import Footer_projet from "../components_projets/Footer_projet";
 
 const Projets = () => {
     const projects = [
@@ -10,8 +10,8 @@ const Projets = () => {
             name: "Synakode",
             year: "2026",
             type: "Full stack",
-            description: "Une courte description",
-            stacks: ["React", "Tailwind CSS", "JavaScript"],
+            description: "Site full stack avec gestion de client, contract et devis.",
+            stacks: ["React", "Tailwind CSS", "JavaScript", "Laravel", "PHP", "PostgreSQL"],
             img_url: "../img/synakode_bg.png",
             url: "https://synakode.com",
         },
@@ -20,7 +20,8 @@ const Projets = () => {
             name: "Fleuriste Cormier",
             year: "2026",
             type: "Site Vitrine",
-            description: "Une courte description",
+            description:
+                "Site vitrine pour un fleuriste de Trois-Rivières. Mise en valeur des services avec un accent sur la présentation visuelle.",
             stacks: ["React", "Tailwind CSS", "JavaScript"],
             img_url: "../img/fleuristeCormier_bg.png",
             url: "https://www.fleuristepepinierecormier.com",
@@ -30,8 +31,9 @@ const Projets = () => {
             name: "Projet final",
             year: "2026",
             type: "Web app",
-            description: "Une courte description",
-            stacks: ["React", "Tailwind CSS", "JavaScript"],
+            description:
+                "Gestionnaire de budget personnel avec système de comptes utilisateurs. Permet de suivre ses dépenses et revenus au quotidien.",
+            stacks: ["React", "Tailwind CSS", "JavaScript", "API"],
             img_url: "../img/projetfinal_bg.png",
         },
     ];
@@ -40,6 +42,7 @@ const Projets = () => {
         <>
             <Hero_projet />
             <ProjectFrame projects={projects} />
+            <Footer_projet />
         </>
     );
 };
