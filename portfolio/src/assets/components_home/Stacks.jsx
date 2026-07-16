@@ -29,8 +29,8 @@ const tagItem = {
 
 const Stacks = () => {
     const frontend = ["React", "JavaScript", "Vue.js", "Tailwind CSS", "Angular", "HTML5", "CSS3"];
-    const backend = ["Laravel", "PHP", "Supabase", "MySQL"];
-    const tooling = ["GitHub", "Figma", "Railway", "npm"];
+    const backend = ["Laravel", "PHP", "PostgreSQL", "MySQL"];
+    const tooling = ["GitHub", "Figma", "Railway", "npm", "Cloudflare"];
 
     return (
         <motion.div
@@ -70,7 +70,7 @@ const Stacks = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="flex space-x-3">
+                    className="flex space-x-3 flex-wrap">
                     {backend.map((stack) => (
                         <motion.p
                             key={stack}
@@ -92,7 +92,7 @@ const Stacks = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="flex space-x-3">
+                    className="flex space-x-3 flex-wrap">
                     {tooling.map((stack) => (
                         <motion.p
                             key={stack}

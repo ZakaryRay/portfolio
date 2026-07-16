@@ -38,7 +38,7 @@ const Hero_projet = () => {
             <motion.div
                 variants={item}
                 className="font-mono text-sm text-electric-green flex space-x-2">
-                <p>Travaux sélectionnés</p>
+                <p>Projets sélectionnés</p>
                 <motion.span
                     variants={separator}
                     style={{ transformOrigin: "left" }}
