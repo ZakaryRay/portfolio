@@ -26,9 +26,9 @@ const Footer_projet = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.6 }}
-            className="uppercase font-mono text-xs flex justify-between px-10 py-6 ">
+            className="uppercase font-mono text-xs flex justify-between px-10 py-6 max-sm:flex-col max-sm:items-center max-sm:space-y-4 ">
             <motion.p variants={item} className="text-gray-purple">
-                Plus de projet sur demande
+                Plus d'info sur demande
             </motion.p>
             <motion.a
                 variants={item}
