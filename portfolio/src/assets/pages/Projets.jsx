@@ -29,7 +29,7 @@ const Projets = () => {
         },
         {
             id: 3,
-            name: "Projet final",
+            name: "Projet final académique",
             year: "2026",
             type: "Web app",
             description:
